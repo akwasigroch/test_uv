@@ -16,6 +16,9 @@ jobs:
       with:
         version: latest
         enable-cache: true
+
+    - name: Set up Python
+      run: uv python install
       
     - name: Install dependencies
       run: |
